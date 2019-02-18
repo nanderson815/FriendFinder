@@ -6,12 +6,12 @@ var router = express.Router()
 var friends = require(path.join(__dirname, '../data/friends.js'));
 
 router.get("/friends", function(req, res){
-    res.send(friends);
+    res.send(friends.FriendsList);
 });
 
 router.post('/friends', function(req,res){
-    friends.push(req.body);
-    res.send(true);
+    friends.FriendsList.push(req.body);
+    res.send(friends.findMatch(req.body));
 });
 
 module.exports = router;
