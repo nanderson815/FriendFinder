@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
-var PORT = 4000;
+var PORT = $port;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
