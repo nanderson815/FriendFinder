@@ -65,7 +65,10 @@ function findMatch(data) {
         }
         diff.push(abs);
     };
-    return diff;    
+    diff.pop();
+    var smallest = Math.min(...diff);
+    var match = friends[diff.indexOf(smallest)];
+    return match;    
 };
 
 exports.findMatch = findMatch;

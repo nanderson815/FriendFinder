@@ -190,12 +190,25 @@
                             <div class="input-field col s12">
                                 <div class="divider"></div>
                                 <div class="section">
-                                    <button id="submitBtn" class="btn waves-effect waves-light" type="submit">Submit</button>
+                                    <button id="submitBtn" class="btn waves-effect waves-light"
+                                        type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Your closest match is...</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchImg" src="" height="200px" width="auto">
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
     </div>
@@ -206,6 +219,7 @@
     <script>
         $(document).ready(function () {
             $('select').formSelect();
+            $('.modal').modal();
         });
 
         $("select[required]").css({ display: "block", height: 0, padding: 0, width: 0, position: 'absolute' });
@@ -214,7 +228,7 @@
             var form = $("#surveyForm")[0];
             if (form.checkValidity()) {
                 event.preventDefault();
-                
+
                 var userData = {
                     name: $("#name").val(),
                     photo: $("#link").val(),
@@ -232,9 +246,14 @@
                     ]
                 };
 
-                $.post('api/friends', userData, function(data){
+                $.post('api/friends', userData, function (data) {
                     console.log(data);
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+
                 });
+
+                $("#modal1").modal('open');
             };
 
         });
