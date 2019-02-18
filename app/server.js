@@ -8,6 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
+var routerHTML = require(`${__dirname}/routing/htmlRoutes.js`);
+
+app.use("/", routerHTML);
+
 
 
 
