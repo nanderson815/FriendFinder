@@ -17,8 +17,8 @@ var friends = [
         ]
     },
     {
-        "name": "Bruce",
-        "photo": "https://vignette.wikia.nocookie.net/pixar/images/8/83/71423763-2085-4F98-8461-FC6E2C48828E.png/revision/latest?cb=20181210152244",
+        "name": "Danny",
+        "photo": "http://www.gstatic.com/tv/thumb/persons/426/426_v9_bb.jpg",
         "scores": [
             1,
             1,
