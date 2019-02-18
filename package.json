@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/nanderson815/FriendFinder/issues"
   },
+  "engines": {
+    "node": "11.4.0"
+  },
   "homepage": "https://github.com/nanderson815/FriendFinder#readme",
   "dependencies": {
     "express": "^4.16.4",
