@@ -30,8 +30,8 @@
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <input id="name" type="url" class="validate" required="" aria-required="true">
-                                    <label for="name">Link to Photo of You (Required)</label>
+                                    <input id="link" type="url" class="validate" required="" aria-required="true">
+                                    <label for="link">Link to Photo of You (Required)</label>
                                 </div>
                             </div>
 
@@ -214,7 +214,27 @@
             var form = $("#surveyForm")[0];
             if (form.checkValidity()) {
                 event.preventDefault();
-               
+                
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#link").val(),
+                    scores: [
+                        $("#Q1").val(),
+                        $("#Q2").val(),
+                        $("#Q3").val(),
+                        $("#Q4").val(),
+                        $("#Q5").val(),
+                        $("#Q6").val(),
+                        $("#Q7").val(),
+                        $("#Q8").val(),
+                        $("#Q9").val(),
+                        $("#Q10").val()
+                    ]
+                };
+
+                $.post('api/friends', userData, function(data){
+                    console.log(data);
+                });
             };
 
         });
