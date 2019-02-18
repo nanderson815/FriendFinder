@@ -33,8 +33,8 @@ var friends = [
         ]
     },
     {
-        "name": "Dori",
-        "photo": "https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2014/12/dory_a_l.jpg",
+        "name": "Kyle",
+        "photo": "http://www.gstatic.com/tv/thumb/persons/659578/659578_v9_ba.jpg",
         "scores": [
             3,
             3,
@@ -46,6 +46,38 @@ var friends = [
             3,
             3,
             3,
+        ]
+    },
+    {
+        "name": "James",
+        "photo": "https://m.media-amazon.com/images/M/MV5BMjA4MzMzNDM5MF5BMl5BanBnXkFtZTgwMjQ0MDk0NDM@._V1_.jpg",
+        "scores": [
+            2,
+            1,
+            4,
+            5,
+            2,
+            3,
+            3,
+            4,
+            5,
+            2,
+        ]
+    },
+    {
+        "name": "Dwayne Michael Carter, Jr.",
+        "photo": "http://www.gstatic.com/tv/thumb/persons/506402/506402_v9_bb.jpg",
+        "scores": [
+            2,
+            1,
+            4,
+            5,
+            2,
+            5,
+            5,
+            4,
+            2,
+            4,
         ]
     }
 ]
