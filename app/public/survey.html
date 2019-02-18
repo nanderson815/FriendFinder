@@ -56,7 +56,127 @@
                                 <div class="section">
                                     <h5>Question 2</h5>
                                     <h6>You worry about things.</h6>
-                                    <select id="Q1" name="q1" class="validate" required="" aria-required="true">
+                                    <select id="Q2" name="q2" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 3</h5>
+                                    <h6>You take charge.</h6>
+                                    <select id="Q3" name="q3" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 4</h5>
+                                    <h6>You are always busy.</h6>
+                                    <select id="Q4" name="q4" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 5</h5>
+                                    <h6>You prefer variety to routine.</h6>
+                                    <select id="Q5" name="q5" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 6</h5>
+                                    <h6>You often eat too much.</h6>
+                                    <select id="Q6" name="q6" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 7</h5>
+                                    <h6>You trust others.</h6>
+                                    <select id="Q7" name="q7" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 8</h5>
+                                    <h6>You make people feel welcome.</h6>
+                                    <select id="Q8" name="q8" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 9</h5>
+                                    <h6>You try to follow the rules.</h6>
+                                    <select id="Q9" name="q9" class="validate" required="" aria-required="true">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <div class="section">
+                                    <h5>Question 10</h5>
+                                    <h6>You talk to a lot of different people at parties.</h6>
+                                    <select id="Q10" name="q10" class="validate" required="" aria-required="true">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1">1 (Strongly Disagree)</option>
                                         <option value="2">2</option>
@@ -88,6 +208,8 @@
         $(document).ready(function () {
             $('select').formSelect();
         });
+
+        $("select[required]").css({ display: "block", height: 0, padding: 0, width: 0, position: 'absolute' });
     </script>
 </body>
 
