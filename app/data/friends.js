@@ -18,9 +18,5 @@ var friends = [
     }
 ]
 
-function addFriend(data){
-    friends.push(data);
-    console.log(data);
-};
 
 module.exports = friends;

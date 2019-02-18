@@ -20,7 +20,7 @@
                 <div class="card-content">
                     <h3>Survey Questions</h3>
                     <div class="row">
-                        <form>
+                        <form id="surveyForm">
                             <div class="divider"></div>
                             <div class="section">
                                 <h5>About You</h5>
@@ -190,8 +190,7 @@
                             <div class="input-field col s12">
                                 <div class="divider"></div>
                                 <div class="section">
-                                    <button class="btn waves-effect waves-light" type="submit"
-                                        name="action">Submit</button>
+                                    <button id="submitBtn" class="btn waves-effect waves-light" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -210,6 +209,18 @@
         });
 
         $("select[required]").css({ display: "block", height: 0, padding: 0, width: 0, position: 'absolute' });
+
+        $("#submitBtn").click(function (event) {
+            var form = $("#surveyForm")[0];
+            if (form.checkValidity()) {
+                event.preventDefault();
+                console.log("valid");
+            } else {
+                console.log("invalid");
+            }
+
+        });
+
     </script>
 </body>
 
