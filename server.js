@@ -16,8 +16,6 @@ app.use("/", routerHTML);
 app.use("/api", routerAPI);
 
 
-
-
 app.listen(PORT, function(){
     console.log("Server started on port " + PORT);
 });
